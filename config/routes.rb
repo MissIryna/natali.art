@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root  'static_pages#home'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contacts', to: 'static_pages#contacts', via: 'get'
-  match '/gallery',  to: 'tatic_pages#gallery',  via: 'get'
+  match '/gallery',  to: 'static_pages#gallery',  via: 'get'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

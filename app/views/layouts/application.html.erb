@@ -1,15 +1,36 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+  "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-  <title><%= yield(:title) %></title>
-  <%= stylesheet_link_tag    "application", media: "all",
-                                            "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+  	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <title><%= yield(:title)%></title>
+    <%= stylesheet_link_tag "application", media: "all",
+                                           "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <%= link_to "Художник Наталія Слука", '#', id: "logo" %>
+          <nav>
+            <ul class="nav pull-right">
+              <li><%= link_to "Домівка",    '#' %></li>
+              <li><%= link_to "Галерея",    '#' %></li>
+              <li><%= link_to "Про мене",    '#' %></li>
+              <li><%= link_to "Контакти", '#' %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <%= image_tag("header_cover.jpg", alt: "cover") %>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
 </html>
