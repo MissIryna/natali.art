@@ -7,13 +7,21 @@ html {
 }
 
 body {
-  background-color : #E6E6FA;
+  background-color : #CDAF95;
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-top: 60px;
+  padding-top: 40px;
 }
+
+
+.b{
+  background-color : #EECBAD; 
+  }
+  
+.shadows{ box-shadow: 0 3px 8px #000; } 
 
 section {
   overflow: auto;
+  padding-top: 40px;
 }
 
 textarea {
@@ -58,7 +66,6 @@ p {
 }
 
 
-
 #logo {
   float: left;
   margin-right: 10px;
@@ -76,60 +83,46 @@ p {
 }
 
 
-/* navbar menu*/
+/* footer */
 
-$bgDefault      : #381d1d;
-$bgHighlight    : #8a2d00;
-$colDefault     : #c0c0c0;
-$colHighlight   : #ffffff;
+footer {
+  margin-top: 25px;
+  padding-top: 5px;
+  //border-top: 1px solid #000000;
+  color: #999;
+}
 
+footer a {
+  color: #555;
+}
 
-/* .navbar-inner
-{
-    background-color: $bgDefault;
-    border-color: $bgHighlight;
-    background-image: none;
-    .navbar-brand {
-      color: $colDefault;
-      &:hover, &:focus { 
-        color: $colHighlight; }}
-    .navbar-text {
-      color: $colDefault; }
-    .navbar-nav {
-      > li {
-        > a {
-          color: $colDefault;
-          &:hover,  &:focus {
-            color: $colHighlight; }}}
-      > .active {
-        > a, > a:hover, > a:focus {
-          color: $colHighlight;
-          background-color: $bgHighlight; }}
-      > .open {
-        > a, > a:hover, > a:focus {
-          color: $colHighlight;
-          background-color: $bgHighlight; }}}
-    .navbar-toggle {
-      border-color: $bgHighlight;
-      &:hover, &:focus {
-        background-color: $bgHighlight; }
-      .icon-bar {
-        background-color: $colDefault; }}
-    .navbar-collapse,
-    .navbar-form {
-      border-color: $colDefault; }
-    .navbar-link {
-      color: $colDefault;
-      &:hover {
-        color: $colHighlight; }}}
-  @media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu {
-      > li > a {
-        color: $colDefault;
-        &:hover, &:focus {
-          color: $colHighlight; }}
-      > .active {
-        > a, > a:hover, > a:focus, {
-          color: $colHighlight;
-          background-color: $bgHighlight; }}}
-  } */
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+.wide {
+  width:100%;
+  height:200px;
+  background-image:url('header_cover.jpg');
+  background-size:cover;
+  margin-bottom: 10px;
+}
+
+.row{
+  margin-bottom: 25px;
+ 
+}

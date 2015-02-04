@@ -7,30 +7,22 @@
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <%= csrf_meta_tags %>   
+	
+	<%= render 'layouts/shim' %>
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">
-          <%= link_to "Художник Наталія Слука", '#', id: "logo" %>
-          <nav>
-            <ul class="nav pull-right">
-              <li><%= link_to "Домівка",    '#' %></li>
-              <li><%= link_to "Галерея",    '#' %></li>
-              <li><%= link_to "Про мене",    '#' %></li>
-              <li><%= link_to "Контакти", '#' %></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <%= image_tag("header_cover.jpg", alt: "cover") %>
-    </header>
-    <div class="container">
-      <%= yield %>
+    <%= render 'layouts/header' %>
+    
+    <div class="container b box shadows">
+         	
+     	 <%= yield %>
+     
     </div>
+    <div class="container">
+    	<%= render 'layouts/footer' %>
+    </div>
+    
   </body>
+  
 </html>

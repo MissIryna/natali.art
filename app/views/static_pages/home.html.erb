@@ -1,5 +1,42 @@
 <% provide(:title, 'Home') %>
-<h1>Natali Sluka Artist</h1>
-<p>
-  
-</p>
+
+	<h1>Художник Наталія Слука</h1>
+	 <div class="slider">
+        <div class="sliderContent">
+            <div class="item"><%= image_tag("10.jpg", alt:"image") %></div>
+		    <div class="item"><%= image_tag("slider/3.jpg", alt:"image") %></div>
+		    <div class="item"><%= image_tag("slider/1.jpg", alt:"image") %></div>
+		    <div class="item"><%= image_tag("slider/2.jpg", alt:"image") %></div>
+		    <div class="item"><%= link_to image_tag("9.jpg", alt:"image")%></div>
+		</div>
+	</div>
+		
+	<div class="row">	
+				
+		  <div class="span4 center">
+		  	<h4>Копії</h4>
+		  	<%= link_to image_tag("bottom_gal/copy.jpg", alt:"image"), gallery_path %> 
+		  </div>
+		  <div class="span4 center">
+		  	<h4>Портрети</h4>
+		  		<%= link_to image_tag("bottom_gal/portret.jpg", alt:"image"), gallery_path %> 
+		  </div>
+		   <div class="span4 center">
+		  	<h4>Живопис</h4>
+		  	<%= link_to image_tag("bottom_gal/painting.jpg", alt:"image"), gallery_path %>
+		  </div>
+		</div>
+
+<script>
+  $('.slider').mobilyslider({
+        animationSpeed: 500,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        bullets: true, 
+   		arrows: true,
+   		arrowsHide: true
+   		//transition: 'fade'
+    });
+
+</script>
