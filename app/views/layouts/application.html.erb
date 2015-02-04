@@ -8,16 +8,15 @@
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>   
+	<script data-turbolinks-track="true" src="/assets/mobilyslider.js?body=1"></script>
+	<link data-turbolinks-track="true" href="/assets/slider.css?body=1" media="all" rel="stylesheet" />
 	
 	<%= render 'layouts/shim' %>
   </head>
   <body>
-    <%= render 'layouts/header' %>
-    
+    <%= render 'layouts/header' %>    
     <div class="container b box shadows">
-         	
      	 <%= yield %>
-     
     </div>
     <div class="container">
     	<%= render 'layouts/footer' %>
