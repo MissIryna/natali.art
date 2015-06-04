@@ -10,14 +10,23 @@ gem 'bootstrap-sass', '2.3.2.0'
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
-  gem 'bcrypt-ruby', '3.1.2'
+  gem 'bcrypt-ruby', '3.1.2', :require => 'bcrypt'
+  # gem 'bcrypt-ruby', '3.1.2'
   gem 'faker', '1.1.2'
   gem 'will_paginate', '3.0.4'
   gem 'bootstrap-will_paginate', '0.0.9'
-
-group :development, :test do
+  gem 'paperclip', '~> 3.0'
   gem 'pg', '0.15.1'
-  gem 'rspec-rails', '2.14.0' 
+  gem 'rmagick', '2.13.4'
+  gem 'carrierwave', '0.10.0'
+  gem 'bootsy', '>= 2.0.11'
+  gem 'byebug'
+  gem 'coffee-script-source', '1.8.0'
+  
+  gem 'jquery-fileupload-rails', git: 'git://github.com/ollnixon/jquery-fileupload-rails.git'
+  
+group :development, :test do
+   gem 'rspec-rails', '2.14.0' 
 end
 
 group :test do
@@ -36,6 +45,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem "jquery-ui-rails"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -59,8 +69,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 
 group :production do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
- gem 'bcrypt-ruby', '3.1.2', :require => 'bcrypt'
+ gem 'rails_12factor', '0.0.2'
 end
 

@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def gallery
+  def galleries
   end
 
   def about

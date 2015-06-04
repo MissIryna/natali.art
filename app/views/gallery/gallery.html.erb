@@ -1,0 +1,274 @@
+<div id="page">
+	<div id="container">
+		<h1>Галерея</h1>
+		
+	<%= form_tag({action: :new}, multipart: true) do %>
+		<%= file_field_tag 'image' %>
+	<% end %>
+		<%= link_to image_tag(@image.image.url(:large)), @image.image.url %>
+				
+				
+				<!-- Start Advanced Gallery Html Containers -->
+				<div id="gallery" class="content">
+					<div id="controls" class="controls"></div>
+					<div class="slideshow-container">
+						<div id="loading" class="loader"></div>
+						<div id="slideshow" class="slideshow"></div>
+					</div>
+					<div id="caption" class="caption-container"></div>
+				</div>
+				<div id="thumbs" class="navigation">
+					<ul class="thumbs noscript">
+						<li>
+							<a class="thumb"  href="/assets/gallery/DSC0 (10).jpg" title="Title #0">
+								<img src="/assets/gallery/DSC0 (10).jpg" alt="Title #0"/>
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #0</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" name="lizard" href="/assets/gallery/DSC0 (17)2.jpg" title="Title #1">
+								<img src="/assets/gallery/DSC0 (17)2.jpg" alt="Title #1"/>
+							</a>
+							<div class="caption">
+								Any html can be placed here ...
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" name="bigleaf" href="/assets/gallery/DSC0 (19).jpg" title="Title #2">
+								<img src="/assets/gallery/DSC0 (19).jpg" alt="Title #2" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #2</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" name="lizard" href="/assets/gallery/DSC0 (30).jpg" title="Title #3">
+								<img src="/assets/gallery/DSC0 (30).jpg" alt="Title #3" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #3</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC0 (36).jpg" title="Title #4">
+								<img src="/assets/gallery/DSC0 (36).jpg" alt="Title #4" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #4</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC0 (44).jpg" title="Title #5">
+								<img src="/assets/gallery/DSC0 (44).jpg" alt="Title #5" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #5</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC0 (8).jpg" title="Title #6">
+								<img src="/assets/gallery/DSC0 (8).jpg" alt="Title #6" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #6</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC01262.JPG" title="Title #7">
+								<img src="/assets/gallery/DSC01262.JPG"  alt="Title #7" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #7</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC06943.JPG"  title="Title #8">
+								<img src="/assets/gallery/DSC06943.JPG"  alt="Title #8" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #8</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC06956.JPG"  title="Title #9">
+								<img src="/assets/gallery/DSC06956.JPG"  alt="Title #9" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #9</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC06972.JPG"  title="Title #10">
+								<img src="/assets/gallery/DSC06972.JPG"  alt="Title #10" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #10</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC06988.JPG " title="Title #11">
+								<img src="/assets/gallery/DSC06988.JPG"  alt="Title #11" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #11</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC07304.JPG"  title="Title #12">
+								<img src="/assets/gallery/DSC07304.JPG"  alt="Title #12" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #12</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC07435.JPG"  title="Title #13">
+								<img src="/assets/gallery/DSC07435.JPG"  alt="Title #13" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #13</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC08002.JPG" " title="Title #14">
+								<img src="/assets/gallery/DSC08002.JPG"  alt="Title #14" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #14</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC080092.jpg" title="Title #15">
+								<img src="/assets/gallery/DSC080092.jpg" alt="Title #15" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #15</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC09059.JPG" title="Title #16">
+								<img src="/assets/gallery/DSC09059.JPG" alt="Title #16" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #16</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC09835.JPG" title="Title #17">
+								<img src="/assets/gallery/DSC09835.JPG" alt="Title #17" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #17</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+
+						<li>
+							<a class="thumb" href="/assets/gallery/DSC0796234.jpg" title="Title #18">
+								<img src="/assets/gallery/DSC0796234.jpg"  alt="Title #18" />
+							</a>
+							<div class="caption">
+								<div class="image-title">Title #18</div>
+								<div class="image-desc">Description</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+
+	<!--%= image_tag("slider/3.jpg", alt:"image") %>
+	<%= image_tag("slider/1.jpg", alt:"image") %>
+	<%= image_tag("slider/2.jpg", alt:"image") %>
+	<%= link_to image_tag("9.jpg", alt:"image")%-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				// We only want these styles applied when javascript is enabled
+				$('div.navigation').css({'width' : '300px', 'float' : 'left'});
+				$('div.content').css('display', 'block');
+
+				// Initially set opacity on thumbs and add
+				// additional styling for hover effect on thumbs
+				var onMouseOutOpacity = 0.67;
+				$('#thumbs ul.thumbs li').opacityrollover({
+					mouseOutOpacity:   onMouseOutOpacity,
+					mouseOverOpacity:  1.0,
+					fadeSpeed:         'fast',
+					exemptionSelector: '.selected'
+				});
+				
+				// Initialize Advanced Galleriffic Gallery
+				var gallery = $('#thumbs').galleriffic({
+					delay:                     2500,
+					numThumbs:                 15,
+					preloadAhead:              10,
+					enableTopPager:            true,
+					enableBottomPager:         true,
+					maxPagesToShow:            7,
+					imageContainerSel:         '#slideshow',
+					controlsContainerSel:      '#controls',
+					captionContainerSel:       '#caption',
+					loadingContainerSel:       '#loading',
+					renderSSControls:          true,
+					renderNavControls:         true,
+					playLinkText:              'Play Slideshow',
+					pauseLinkText:             'Pause Slideshow',
+					prevLinkText:              '&lsaquo; Previous Photo',
+					nextLinkText:              'Next Photo &rsaquo;',
+					nextPageLinkText:          'Next &rsaquo;',
+					prevPageLinkText:          '&lsaquo; Prev',
+					enableHistory:             false,
+					autoStart:                 false,
+					syncTransitions:           true,
+					defaultTransitionDuration: 900,
+					onSlideChange:             function(prevIndex, nextIndex) {
+						// 'this' refers to the gallery, which is an extension of $('#thumbs')
+						this.find('ul.thumbs').children()
+							.eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+							.eq(nextIndex).fadeTo('fast', 1.0);
+					},
+					onPageTransitionOut:       function(callback) {
+						this.fadeTo('fast', 0.0, callback);
+					},
+					onPageTransitionIn:        function() {
+						this.fadeTo('fast', 1.0);
+					}
+				});
+			});
+</script>

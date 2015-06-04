@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
   
+  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
+  resources :uploads
+  resources :galleries
+  resources :paintings
+  # get 'gall/new'  
+  # get 'image/new'  
+#   
+
   root  'static_pages#home'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contacts', to: 'static_pages#contacts', via: 'get'
-  match '/gallery',  to: 'static_pages#gallery',  via: 'get'
-
-
+  match '/artgallery',  to: 'artgallery#artgallery',  via: 'get'
+  match '/allgallery',  to: 'artgallery#all',  via: 'get'
+  match '/images',  to: 'image#new',  via: 'get'
+   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
