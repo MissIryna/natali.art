@@ -41,9 +41,9 @@ class PaintingsController < ApplicationController
   def painting_params
     params.require(:painting).permit(:gallery_id, :name, :image, :remote_image_url)
   end
- def authenticate
-    authenticate_or_request_with_http_basic do |name, password|
+  def authenticate
+       authenticate_or_request_with_http_basic do |name, password|
        name == "admin" &&  password == "secret"
     end
-  end
+   end
 end
