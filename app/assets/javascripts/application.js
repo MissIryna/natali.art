@@ -18,5 +18,6 @@
 //= require turbolinks
 //= require jquery.fileupload
 //= require jquery.fileupload-ui
+//= require_tree .
 
 
