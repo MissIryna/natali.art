@@ -13,7 +13,7 @@
 
 //= require jquery
 //= require jquery_ujs
-//= require bootsy
+//= require jquery-ui
 //= require bootstrap
 //= require turbolinks
 //= require jquery.fileupload
