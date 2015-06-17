@@ -72,9 +72,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.assets.precompile += %w( mobilyslider.js ) 
-  config.assets.precompile += %w( jquery.galleriffic.js)
-  config.assets.precompile += %w(  jquery.opacityrollover.js)
+  # config.assets.precompile += %w( mobilyslider.js ) 
+  # config.assets.precompile += %w( jquery.galleriffic.js)
+  # config.assets.precompile += %w(  jquery.opacityrollover.js)
   config.serve_static_assets = true
   config.assets.digest = true
 end
