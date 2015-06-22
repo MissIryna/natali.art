@@ -79,6 +79,6 @@ Rails.application.configure do
   config.assets.precompile += %w( mobilyslider.js ) 
   config.assets.precompile += %w( jquery.galleriffic.js)
   config.assets.precompile += %w(  jquery.opacityrollover.js)
-  # config.serve_static_assets = true
+  config.serve_static_assets = true
  
 end
